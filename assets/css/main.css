@@ -1,1 +1,81 @@
-/*# sourceMappingURL=main.css.map */
+/****general****/
+* {
+  font-family: roboto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+/****header****/
+header {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  width: 100%;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+}
+
+.back-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.fa-arrow-left {
+  background-color: yellow;
+}
+
+.logo {
+  /**** ****/
+}
+
+.card {
+  background-color: grey;
+  width: 200px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.restau img {
+  width: 200px;
+  height: 124px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.location {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+/****footer****/
+footer {
+  background-color: #353535;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
