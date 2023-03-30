@@ -1,78 +1,52 @@
+@import "./layout/header";
+@import "./pages/homepage";
+@import "./layout/footer";
 
-@import "./utils/variables";
-
-/****general****/
-
-* {
-    font-family: roboto;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
+.img-restau {
     width: 100%;
-    max-width: 768px;
-
-    box-sizing: border-box;
+    height: 275px;
+    border: 2px solid black;
 }
 
-h1, h2, h3 {
-    font-family: 'Shrikhand', cursive;
-}
-
-/****header****/
-
-header {
-    background-color: aqua;
-    display: flex;
-    flex-direction: row;
-    justify-content:safe;
+.img-restau img {
     width: 100%;
-    height: 50px;
 }
 
-.logo {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: blueviolet;
+
+/****/
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
-.back-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-}
+/***/
 
-.fa-arrow-left {
-    background-color: yellow;
-
-}
-
-.logo {
-
-/**** ****/
-
-}
 
 .card {
     background-color: grey;
-    width: 200px;
+    width: 90%;
+    height: 250px;
     border-radius: 20px;
-    padding: 5px;
+    margin-top: 30px;
 }
 
 .restau img {
-    width: 200px;
-    height: 124px;
+    width: 100%;
+    height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.card-menu {
+    background-color: cadetblue;
+}
+
+.restau .card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 0.2em;
 }
 
 .location {
@@ -84,9 +58,13 @@ header {
 
 }
 
-/****footer****/
+/****menu****/
 
-footer {
-    background-color: $footer;
-    color: white;
+.menu {
+    width: 100%;
+    height: 400px;
+    background-color: brown;
 }
+
+
+

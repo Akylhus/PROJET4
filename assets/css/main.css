@@ -1,69 +1,87 @@
-/****general****/
-* {
-  font-family: roboto;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-}
-
-.main-container {
-  width: 100%;
-  max-width: 768px;
-  box-sizing: border-box;
-}
-
-h1, h2, h3 {
-  font-family: "Shrikhand", cursive;
-}
-
-/****header****/
 header {
   background-color: aqua;
   display: flex;
-  flex-direction: row;
-  justify-content: safe;
+  align-items: center;
+  justify-items: center;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
-.logo {
-  display: flex;
-  width: 100%;
+header .logo {
+  width: 50vw;
+  max-width: 200px;
   height: 50px;
-  background-color: blueviolet;
+  background-color: green;
 }
 
 .back-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 50px;
   width: 50px;
   border-radius: 25px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.fa-arrow-left {
-  background-color: yellow;
+.explo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.logo {
-  /**** ****/
+.functio {
+  display: flex;
+  flex-direction: column;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+}
+
+.img-restau {
+  width: 100%;
+  height: 275px;
+  border: 2px solid black;
+}
+
+.img-restau img {
+  width: 100%;
+}
+
+/****/
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+/***/
 .card {
   background-color: grey;
-  width: 200px;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
-  padding: 5px;
+  margin-top: 30px;
 }
 
 .restau img {
-  width: 200px;
-  height: 124px;
+  width: 100%;
+  height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.card-menu {
+  background-color: cadetblue;
+}
+
+.restau .card-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 0.2em;
 }
 
 .location {
@@ -74,8 +92,9 @@ header {
   height: 50px;
 }
 
-/****footer****/
-footer {
-  background-color: #353535;
-  color: white;
+/****menu****/
+.menu {
+  width: 100%;
+  height: 400px;
+  background-color: brown;
 }/*# sourceMappingURL=main.css.map */
