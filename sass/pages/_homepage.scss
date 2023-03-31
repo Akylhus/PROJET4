@@ -1,5 +1,19 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
+
+// Location 
+
+.location {
+    background-color: $backcity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+// Exploration
 
 .explo {
     display: flex;
@@ -8,7 +22,81 @@
     text-align: center;
 }
 
+.resto-buttons {
+    background-color: linear-gradiant($primary, $secondary);
+    @include button;
+}
+
+// Fonctio
+
 .functio {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.functio-step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    width: 90%;
+    height: 70px;
+    border-radius: 20px;
+    background-color: $background;
+    margin: 5px 0;
+}
+
+.step {
+    @include circle;
+    margin-left: -10px;
+}
+
+
+.icone {
+    margin: 0 40px;
+    font-size: x-large;
+}
+
+// Restau
+
+.link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    background-color: grey;
+    width: 90%;
+    height: 270px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-menu {
+    background-color: cadetblue;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    line-height: 0.2em;
+    padding-left: 10px;
+}
+
+.fa-heart {
+    display: flex;
+    margin: 5px;
+    font-size: xx-large;
 }
