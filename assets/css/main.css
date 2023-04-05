@@ -33,6 +33,16 @@ h1, h2 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.back-home {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 /****color****/
 /****other****/
 header {
@@ -49,16 +59,6 @@ header {
   max-width: 200px;
   height: 50px;
   margin: auto;
-}
-
-.back-home {
-  height: 40px;
-  width: 40px;
-  border-radius: 25px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /****color****/
@@ -139,6 +139,7 @@ header {
   background-color: #FFFFFF;
   height: 270px;
   margin-bottom: 30px;
+  position: relative;
 }
 .card img {
   height: 200px;
@@ -155,14 +156,13 @@ header {
   padding-left: 10px;
 }
 
-.fa-heart {
-  display: flex;
+.card-rating {
   margin: 5px;
   font-size: xx-large;
-}
-
-.fa-heart:active {
-  color: #9356DC;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  background-color: aqua;
 }
 
 /****color****/
@@ -176,7 +176,6 @@ header {
 .img-restau {
   width: 100%;
   height: 275px;
-  border: 2px solid black;
 }
 
 .img-restau img {
@@ -185,8 +184,11 @@ header {
   height: 275px;
 }
 
+.nom-restau {
+  margin-left: 30px;
+}
+
 .full-menu {
-  font-weight: bolder;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,9 +197,11 @@ header {
 
 .menu {
   width: 100%;
-  height: 1000px;
+  height: auto;
   background-color: #F6F6F6;
-  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  bottom: 50px;
 }
 
 .card-menu {
@@ -206,6 +210,11 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   padding: 0 10px;
+  height: 80px;
+}
+
+.card-title {
+  padding-top: 5px;
 }
 
 .card-subtitle {
@@ -214,6 +223,7 @@ header {
 }
 
 .food {
+  height: auto;
   border: none;
   width: 95%;
 }
