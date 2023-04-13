@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" 
@@ -14,7 +14,9 @@
         referrerpolicy="no-referrer">
     <title>Oh my food</title>
 </head>
+
 <body>
+
     <div class="main-container">
         <header>
             <a class="back-home" href="../index.html">
@@ -24,24 +26,70 @@
         </header>
         <main>
             <div class="img-restau">
-                <img src="" alt="">
+                <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
             </div>
 
             <section class="menu">
-                <h2></h2>
-                <div class="starter">
-                    <label class="card-menu" for="riche">Fricassée d'escargots</label><input type="radio" name="souhait" value="riche" id="riche"> 
-                </div>
 
-                <div class="dish">
+                <h2 class="nom-restau">Á la française</h2>
 
-                </div>
+                <form class="full-menu">
+                    <fieldset class="starter food">
+                        <legend>ENTRÉES</legend>
+                            <div class="card-menu">
+                                <h3 class="card-title">Tartare de poulpe acidulé</h3>
+                                <p class="card-subtitle">Aux zestes d'orange <span class="euro">25€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Velouté de légumes d'antan</h3>
+                                <p class="card-subtitle">Carotte, panais, topinambour <span class="euro">35€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Soupe à l'oignon</h3>
+                                <p class="card-subtitle">Revisitée <span class="euro">20€</span></p>
+                            </div>
+                    </fieldset>
+                
+                    <fieldset class="dish food">
+                        <legend>PLATS</legend>
+                            <div class="card-menu">
+                                <h3 class="card-title">Coquilles Saint-Jacques</h3>
+                                <p class="card-subtitle">Accompagnées d'une purée de panais <span class="euro">40€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Magret de canard</h3>
+                                <p class="card-subtitle">Et parmentier de pommes de terre <span class="euro">35€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Pigeonneau d’Ille-et-Vilaine</h3>
+                                <p class="card-subtitle">Sur son lit de gnocchis aux légumes <span class="euro">44€</span></p>
+                            </div>
+                    </fieldset>
 
-                <div class="dessert">
+                    <fieldset class="dessert food">
+                        <legend>DESSERTS</legend>
+                            <div class="card-menu">
+                                <h3 class="card-title">Pétales de violettes glacés</h3>
+                                <p class="card-subtitle">Et purée de noisettes <span class="euro">18€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Fondant au chocolat</h3>
+                                <p class="card-subtitle">Revisité <span class="euro">22€</span></p>
+                            </div>
+                            <div class="card-menu">
+                                <h3 class="card-title">Millefeuille croustillant</h3>
+                                <p class="card-subtitle">Myrtilles et pâte d’amande <span class="euro">23€</span></p>
+                            </div>
+                    </fieldset>
+                    
+                    <div class="resto-buttons">
+                        <button type="button"  class="resto-button">
+                            <span>Commander</span>
+                        </button>
+                    </div>    
 
-                </div>
+                </form>
 
-                <button>Commander</button>
             </section>
 
         </main>
@@ -53,5 +101,6 @@
             <p>Mentions légales</p>
             <p>Contact</p>
         </footer>
+
     </div>
 </body>

@@ -1,1 +1,35 @@
 @import "../utils/variables";
+@import "../utils/mixins";
+
+.resto-button {
+    margin-top: 10px;
+    @include button;
+}
+
+.back-home {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fa-heart {
+    @include heart;
+}
+
+.box-new {
+    display: flex;
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary;
+    width: 15%;
+    height: 30px;
+    font-size: 3vw;
+    color: green;
+}

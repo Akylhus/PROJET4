@@ -1,5 +1,20 @@
 @import "variables";
 
+/****gradiant****/
+
+@mixin gradient {
+    background: linear-gradient(to top left, $primary, $secondary);
+}
+
+/****shadow****/
+
+@mixin shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin shadow__bottom {
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
 /****circle****/
 
@@ -15,6 +30,53 @@
     align-items: center;
 }
 
+/****button****/
+
 @mixin button {
-    background-color: linear-gradiant($primary, $secondary);
+    @include gradient;
+    border-radius: 20px;
+    width: 190px;
+    height: 40px;
+    border: none;
+    color: white;
+    @include shadow;
+}
+
+/****bar****/
+
+@mixin bar {
+    background-color: $tertiary;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+/****card****/
+
+@mixin card {
+    border-radius: 15px;
+    width: 95%;
+    background-color: $backcard;
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($beakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin heart {
+    margin: 5px;
+    font-size: 7vw;
+    &.fa-solid {
+        opacity: 0;
+        transition: all 250ms ease-in-out;
+    }
+
+    &:hover{
+        opacity: 1;
+        background: -webkit-linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
