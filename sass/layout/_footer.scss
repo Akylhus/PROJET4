@@ -2,10 +2,31 @@
 
 footer {
     background-color: $footer;
-    color: white;
+    color: $background;
     padding: 20px;
+    height: auto;
+    h2 {
+        margin: 5px 0;
+    }
 
     @include desktop-only {
         
     }
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    margin-top: 20px;
+
+    .fa-utensils {
+        margin-right: 5px;
+    }
+}
+
+.footer-mail {
+    text-decoration: none;
+    color: $background;
 }
