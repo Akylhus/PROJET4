@@ -1,6 +1,6 @@
 @import "../utils/variables";
 
-footer {
+.footer {
     background-color: $footer;
     color: $background;
     padding: 20px;
@@ -10,8 +10,20 @@ footer {
     }
 
     @include desktop-only {
-        
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: flex-end;
+        align-items: center;
     }
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    
 }
 
 .footer-icon {
@@ -20,6 +32,9 @@ footer {
     align-items: center;
     height: 20px;
     margin-top: 20px;
+    @include desktop-only {
+        margin-top: 0;
+    }
 
     .fa-utensils {
         margin-right: 5px;
