@@ -1,19 +1,26 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.resto-button {
+.restau-button {
     margin-top: 10px;
     @include button;
+    &:hover {
+        filter: brightness(120%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        transition: all 350ms ease-in-out;
+    }
 }
 
 .back-home {
     height: 40px;
     width: 40px;
     border-radius: 25px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-size: 2rem;
 }
 
 .fa-heart {
@@ -32,4 +39,7 @@
     height: 30px;
     font-size: 3vw;
     color: green;
+    @include desktop-only {
+        font-size: 1vw;
+    }
 }
