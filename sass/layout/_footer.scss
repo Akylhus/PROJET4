@@ -1,10 +1,12 @@
 @import "../utils/variables";
 
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: $footer;
     color: $background;
     padding: 20px;
-    height: auto;
+
     h2 {
         margin: 5px 0;
     }
@@ -15,6 +17,10 @@
         gap: 30px;
         justify-content: flex-end;
         align-items: center;
+        &-box__title {
+            order: 5;
+        }
+        
     }
 }
 
@@ -23,10 +29,9 @@
     font-size: 2rem;
     font-family: 'Shrikhand', cursive;
     display: flex;
-    
 }
 
-.footer-icon {
+.footer-box__icon {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,12 +41,27 @@
         margin-top: 0;
     }
 
-    .fa-utensils {
-        margin-right: 5px;
+}
+.fa-utensils {
+    margin-right: 10px;
+}
+
+.fa-handshake-angle {
+    margin-right: 5px;
+}
+
+.footer-mention {
+    margin-top: 15px;
+    @include desktop-only {
+        margin-top: 0;
     }
 }
 
 .footer-mail {
     text-decoration: none;
     color: $background;
+    margin-top: 15px;
+    @include desktop-only {
+        margin-top: 0;
+    }
 }
