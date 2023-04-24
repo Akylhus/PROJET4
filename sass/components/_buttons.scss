@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.restau-button {
+.restaurant-button {
     margin-top: 10px;
     @include button;
     &:hover {
@@ -12,15 +12,9 @@
 }
 
 .back-home {
-    height: 40px;
-    width: 40px;
-    border-radius: 25px;
     margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
     font-size: 2rem;
+    color: black;
 }
 
 .fa-heart {

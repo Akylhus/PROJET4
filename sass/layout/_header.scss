@@ -8,7 +8,7 @@ header {
     margin-bottom: 1px;
     @include shadow__bottom;  
     @include desktop-only {
-        height: 100px;;
+        height: 100px;
     }
 }
 

@@ -1,6 +1,6 @@
 @import "variables";
 
-/****gradiant****/
+/***************gradiant****/
 
 @mixin gradient {
     background: linear-gradient(to top left, $primary, $secondary);
@@ -22,7 +22,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    border-radius: 25px;
+    border-radius: 24px;
     background-color: $primary;
     color: white;
     display: flex;
@@ -59,29 +59,35 @@
     background-color: $backcard;
 }
 
-@mixin desktop-only {
-    @media screen and (min-width: map-get($beakpoints, desktop)) {
-        @content;
-    }
-}
 
 /****heart****/
 
 @mixin heart {
-    font-size: 7vw;
+    font-size: 30px;
+    margin-left: -40px;
     @include desktop-only {
-        font-size: 2.5vw;
+        font-size: 30px;
+        margin-left: 10px;
     }
-
+    
     &.fa-solid {
         opacity: 0;
         transition: all 250ms ease-in-out;
     }
-
+    
     &:hover{
         opacity: 1;
         background: -webkit-linear-gradient($primary, $secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
 }
+
+/****desktop****/
+
+    @mixin desktop-only {
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            @content;
+        }
+    }

@@ -4,12 +4,11 @@
 
 /****image menu****/
 
-.img-restau {
-    width: 100%;
+.img-restaurant {
     height: 275px;
 }
 
-.img-restau img {
+.img-restaurant img {
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -21,22 +20,21 @@
 //****MENU****//
 
 .title-fav {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
     @include desktop-only {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
     }
 }
 
-.nom-restau {
+.nom-restaurant {
     padding-top: 20px;
 }
 
 .menu {
-    width: 100%;
-    height: auto;
     background-color: $background;
     border-radius: 40px 40px 0 0;
     position: relative;
@@ -45,13 +43,10 @@
     padding-bottom: 20px;
     @include desktop-only {
         width: 75%;
-        height: auto;
         margin: auto;
-        bottom: 0;
         &-content {
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
     }
 }
@@ -60,7 +55,6 @@
     @include card;
     @include shadow;
     display: flex;
-    flex-direction: row;
     height: 80px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -73,7 +67,7 @@
 
 .card-menu__dish {
     opacity: 0%;
-    animation: loadin  2s;
+    animation: loadin 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
@@ -103,7 +97,7 @@
 
 
 .title-food {
-    font-weight:normal ;
+    font-weight: normal ;
     margin-bottom: 5px;
 }
 
@@ -131,11 +125,9 @@
 }
 
 .bloc {
-
     width: 90%;
     display: flex;
     flex-direction: column;
-    height: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -155,16 +147,15 @@
     justify-content: center;
     align-items: center;
     transition: all 350ms ease-in-out;
-    height: auto;
     background-color: $tertiary;
     
 }
 
 .card-menu:hover .bloc {
-width:78%;
-@include desktop-only {
+    width:78%;
+    @include desktop-only {
     width: 82%;
-}
+    }
 }
 
 .card-menu:hover .select {
@@ -174,18 +165,12 @@ width:78%;
     }
 }
 
-.food {
-    height: auto;
-    border: none;
-    width: 100%;
-}
-
 .card-menu:hover .fa-circle-check {
     display: flex;
     justify-content: center;
 }
 
-.restau-buttons__menu {
+.restaurant-buttons__menu {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -195,19 +180,11 @@ width:78%;
     @include bar;
 }
 
-.card-restau {
-    display: block;
-}
-
-.card-restau > .fa-heart {
+.card-restaurant > .fa-heart {
     position: absolute;
-    top: 2%;
-    left: 85%;
     @include desktop-only {
-        top: 3%;
-        left: 65%;
-        font-size: 30px;
-        margin-left: 10px;
+        margin-left: 20px;
+        margin-top: -5px;
     }
 }
 
